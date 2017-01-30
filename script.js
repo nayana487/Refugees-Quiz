@@ -4,8 +4,6 @@
     //Setting variable for score, to keep track of progress
     score = 0;
 
-    var upLevel
-
 
     //b. Functions
     //function to include the visitor's name in the page
