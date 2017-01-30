@@ -1,13 +1,19 @@
 body {
-  background: yellow;
+  /*background: yellow;*/
   /*margin: 15px auto;*/
 }
 nav {
   background: black;
-  height: 40px;
+  height: 85px;
   padding: 15px;
   position: fixed;
   width: 1000vw;
+}
+nav h1 {
+  font-size: 40px;
+  color: white;
+  padding-bottom: 5px;
+  color: blue;
 }
 nav p {
   font-size: 40px;
@@ -19,33 +25,48 @@ nav p {
 }
 header {
   height: 100vh;
-  padding: 20px;
+  padding: 30px;
+  padding-top: 130px;
+  font-size: 45px;
 }
-h1 {
+/*h1 {
   font-size: 60px;
-}
+}*/
 header > p {
-  font-size: 40px;
+  /*font-size: 40px;*/
   text-align: justify;
 }
 header > h2 {
-  font-size: 50px;
+  /*font-size: 50px;*/
+  margin-top: 20px;
 }
 header li {
-  font-size: 35px;
+  /*font-size: 35px;*/
 }
 #begin {
   float: right;
-  height: 40px;
-  width: 150px;
+  height: 80px;
+  width: 300px;
+  font-size: 40px;
+  margin-top: 0;
+  margin-right: 0;
+  padding: 15px;
 }
 
 div {
   height: 100vh;
+  font-size: 50px;
+  padding: 0 30px 0 30px;
 }
-
-li {
+div button {
+  font-size: 50px;
+}
+div li {
   display: block;
+}
+.forward {
+  float: right;
+  margin-right: 20px;
 }
 .hide {
   visibility: hidden;

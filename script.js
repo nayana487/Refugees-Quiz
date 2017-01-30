@@ -76,7 +76,7 @@
 
     //Needed functions
     // People can't choose more than one answer. when someone checks a second box, the previous checked box gets unchecked
-    // When someone clicks the next question button, the previous question disappears, and the next question appears.
+    // When someone clicks the next question button, the next question appears.
 
     // function checkAll(){
     // $('input').removeAttr('unchecked');
