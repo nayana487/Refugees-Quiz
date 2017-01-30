@@ -54,15 +54,12 @@ header li {
 }
 
 div {
-  height: 100vh;
+  /*height: 100vh;*/
   font-size: 50px;
   padding: 0 30px 0 30px;
 }
 div button {
   font-size: 50px;
-}
-div li {
-  display: block;
 }
 .forward {
   float: right;

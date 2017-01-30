@@ -65,7 +65,7 @@
     $('.answer').on('click', isAnswerRight);
 
     // Event listener for clicking the next question button
-    $('.forward').on('click', function() {
+		$('.forward').on('click', function() {
       $(this).parent().next().removeClass('hide');
     })
 
@@ -77,17 +77,12 @@
 
 
 
-
     // People can't choose more than one answer. when someone checks a second box, the previous checked box gets unchecked
-    // $('input').on('click', function oneAnswer(){
-    //   allInputs = $('input').each
-    //   allInputs.attr('unchecked');
-    //   $(this).attr('checked')
-    // });
-
-    // function checkAll(){
-    // $('input').removeAttr('unchecked');
-    // $('input').attr('checked');
-    // };
+    // $('li').on('click', oneAnswer)
+		//
+		// function oneAnswer(){
+		// $('input').each.attr('unchecked');
+		// $('input').removeAttr('unchecked');
+		// };
 
   })

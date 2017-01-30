@@ -27,16 +27,18 @@
         <li>- You can only choose one answer for each question.</li>
         <li>- You have three minutes to finish the quiz!</li>
       </ul>
-      <button id="begin">Take the Quiz</button>
+      <a href="#Question1"><button id="begin">Take the Quiz</button></a>
     </header>
 
     <main>
       <div id="Question1">
         <h2>Question 1: How many refugees in the world today? (As of Jan 2017)</h2>
-        <li><input type="checkbox" id="answer1" unchecked value="correct">65.3 Millions</li>
-        <li><input type="checkbox" id="answer2" unchecked value="wrong">25.4 Millions</li>
-        <li><input type="checkbox" id="answer3" unchecked value="wrong">1.2 Billion</li>
-        <li><input type="checkbox" id="answer4" unchecked value="wrong">900 Millions</li>
+        <ul>
+          <li><input type="radio" id="answer1" value="correct"><label for="answer1">65.3 Millions</label></li>
+          <li><input type="radio" id="answer2" value="wrong"><label for="answer2">25.4 Millions</label></li>
+          <li><input type="radio" id="answer3" value="wrong"><label for="answer3">1.2 Billion</label></li>
+          <li><input type="radio" id="answer4" value="wrong"><label for="answer4">900 Millions</label></li>
+        <ul>
         <p class="correctAnswerText hide">Correct answer Text</p>
         <p class="falseAnswerText hide">False answer Text</p>
         <button class="answer">Answer</button>
