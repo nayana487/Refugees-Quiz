@@ -4,6 +4,7 @@
     //Setting variable for score, to keep track of progress
     score = 0;
 
+    var upLevel
 
 
     //b. Functions
@@ -58,25 +59,33 @@
 
 
 
+
+
+
     //C. Event Listeners
     //Event listener for clicking the answer button
     $('.answer').on('click', isAnswerRight);
 
+    // Event listener for clicking the next question button
+    $('.forward').on('click', function() {
+      $(this).parent().next().removeClass('hide');
+    })
 
 
-    //
+
+
+
+
+
+
+
+
+    // People can't choose more than one answer. when someone checks a second box, the previous checked box gets unchecked
     // $('input').on('click', function oneAnswer(){
     //   allInputs = $('input').each
     //   allInputs.attr('unchecked');
     //   $(this).attr('checked')
     // });
-
-
-
-
-    //Needed functions
-    // People can't choose more than one answer. when someone checks a second box, the previous checked box gets unchecked
-    // When someone clicks the next question button, the next question appears.
 
     // function checkAll(){
     // $('input').removeAttr('unchecked');
