@@ -7,6 +7,19 @@
 
 
     //b. Functions
+    //function to include the visitor's name in the page
+    function askForName(){
+    var visitor = prompt('Hello, visiter! What should I call you?');
+      if (visitor === "") {
+        console.log('No Answer');
+      } else if (visitor === null) {
+        console.log('No Answer');
+      } else {
+        $('.visitorName').text(visitor);
+      }
+    }
+    setTimeout(askForName, 1000);
+
     //Function to find if the answer is correct
     function isAnswerRight(){
       // if ( $('#answer1:checked') )    //jQuery syntax needed
@@ -21,8 +34,6 @@
         showForwardBottom();
       }
     }
-
-
 
     //Function to disable inputs after an aanswer
     function disableInputs(){
@@ -53,6 +64,12 @@
 
 
 
+    //
+    // $('input').on('click', function oneAnswer(){
+    //   allInputs = $('input').each
+    //   allInputs.attr('unchecked');
+    //   $(this).attr('checked')
+    // });
 
 
 

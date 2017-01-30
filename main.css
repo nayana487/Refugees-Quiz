@@ -1,9 +1,58 @@
 body {
   background: yellow;
+  /*margin: 15px auto;*/
 }
+nav {
+  background: black;
+  height: 40px;
+  padding: 15px;
+  position: fixed;
+  width: 1000vw;
+}
+nav p {
+  font-size: 40px;
+  display: block;
+  color: white;
+}
+.timer {
+  margin-left: 200px;
+}
+header {
+  height: 100vh;
+  padding: 20px;
+}
+h1 {
+  font-size: 60px;
+}
+header > p {
+  font-size: 40px;
+  text-align: justify;
+}
+header > h2 {
+  font-size: 50px;
+}
+header li {
+  font-size: 35px;
+}
+#begin {
+  float: right;
+  height: 40px;
+  width: 150px;
+}
+
+div {
+  height: 100vh;
+}
+
 li {
   display: block;
 }
 .hide {
   visibility: hidden;
+}
+.falseAnswerText {
+  color: red;
+}
+.correctAnswerText {
+  color: green;
 }
