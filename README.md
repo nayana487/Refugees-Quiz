@@ -1,5 +1,5 @@
 # Refugees-Quiz
-
+ 
 # Self-scoring Trivia
 Pre-load your app with some questions and answers.
 Test the user's wits & knowledge with whatever-the-heck you know about (so you can actually win). Guess answers, have the computer tell you how right you are!
@@ -45,4 +45,3 @@ Your app must:
   6. As a user, I should see a timer on the top of the quiz, to make sure I can finish on time.
   7. As a user, I should be able to compete against an another player, so I know who among us knows more about the subject.
   8. As a user, I should be able to have my results saved, even after I refresh the browser.
-  
