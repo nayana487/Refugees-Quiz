@@ -36,7 +36,6 @@
 
 
 
-
     //Function to disable inputs after an aanswer
     // function disableInputs(){
     //   $('input').attr('disabled', '');
@@ -54,10 +53,10 @@
 		// 	$('#q1').append($('#1f'));
     // }
 
-    // //Function to show the Next Question button appears
-    //  function showForwardBottom () {
-    //    $('.forward').removeClass('hide');
-    //   };
+    //Function to show the Next Question button appears
+     function showForwardBottom () {
+       $(this).next().removeClass('hide');
+      };
 
 
 
@@ -68,8 +67,8 @@
     //C. Event Listeners
     //Event listener for clicking the answer button
     // $('.answer').on('click', isAnswerRight);
-		//
-		
+		$('.answer').on('click', showForwardBottom);
+
     // // Event listener for clicking the next question button
 		$('.forward').on('click', function() {
       $(this).parents('section').next().removeClass('hide');
