@@ -1,19 +1,18 @@
 	$(document).ready(function(){
 
-    //A. Setting variables
+    //A. variables
     //Setting variables for answers and score, to keep track of progress
 		answerV = '';
 		score = 0;
-
+		//Setting a default visitor's name
 		visitor = 'visitor'
-
-		//Timer Functionality
+		//Timer Functionality, to keep track of time
 		seconds = 0;
 	  timerId = 0;
 
 
     //B. Functions
-		// Cookies Functionality
+		// Cookies Functionality for visitor's name
 		setTimeout(checkCookie, 1000);
 		//Set Cookie
 		function setCookie(cname, cvalue, exdays) {
@@ -51,9 +50,6 @@
 	          }
 	      }
 	  }
-
-
-
     //function to include the visitor's name in the page (Replaced)
     // function askForName(){
     // var visitor = prompt('Hello, visiter! What should I call you?');
@@ -93,12 +89,14 @@
 			if ( answerV === 'correct' ){
 				score++;
 				console.log(score);
+				$('.playerScore').html(`${score}`);
 				disableInputs();
 				showCorrectText();
 				showForwardBottom();
 				self.attr('disabled', '');
 			} else {
 				console.log(score);
+				$('.playerScore').html(`${score}`);
 				disableInputs();
 				showFalseText();
 				showForwardBottom();
@@ -151,7 +149,7 @@
 		  clearInterval(timerId);
 			$(this).attr('disabled', '');
 			$('footer').removeClass('hide');
-			$('#playerScore').html(`${score}`);
+			$('.playerScore').html(`${score}`);
 			$('#timer2').html(`${seconds}`);
 		});
 
