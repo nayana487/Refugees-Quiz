@@ -102,12 +102,12 @@
 			$(this).attr('disabled', '');
 		});
 
-		//Event listener to stop the timer
+		//Event listener to finish the quiz
 		$(".finish").on("click", function(){
 		  clearInterval(timerId);
 			$(this).attr('disabled', '');
 			$('footer').removeClass('hide');
-			$("playerScore").html(`${score}`);
+			$("#playerScore").html(`${score}`);
 			$("#timer2").html(`${seconds}`);
 		});
 
@@ -125,7 +125,6 @@
     });
 
 
-		//Show score in footer
 		// Add second player Functionality
 		// Make timer count down
 		// Make timer count minutes
