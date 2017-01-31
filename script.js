@@ -19,20 +19,36 @@
     // }
     // setTimeout(askForName, 1000);
 
-    //Function to find if the answer is correct
-    // function isAnswerRight(){
-    //   // if ( $('input:checked').val() == "correct" )
-    //   if (document.getElementById('answer1').checked){
-    //     score++;
-    //     disableInputs();
-    //     showCorrectText();
-    //     showForwardBottom();
-    //   } else {
-    //     disableInputs();
-    //     showFalseText();
-    //     showForwardBottom();
-    //   }
-    // }
+    //Function to find if the answer is correct   //Needs Work
+		function answerValue(){
+			// answerV = $(this).parent().('ul').each('li').('input:checked').val();
+			// $(this).prev().('li').('input:checked').val();
+			// answerV = $(this).parnets('div').('input:checked').val();
+			answerV = 'ncorrect';
+			self = $(this);
+			isAnswerRight()
+		}
+
+		function isAnswerRight(){
+			if ( answerV === 'correct' ){
+				//   // if ( $('input:checked').val() == "correct" )
+				//   if (document.getElementById('answer1').checked){
+				console.log('correct');
+				score++;
+				console.log(score);
+				//     disableInputs();
+				showCorrectText();
+				showForwardBottom();
+			} else {
+				console.log('wrong');
+				//     disableInputs();
+				showFalseText();
+				showForwardBottom();
+			}
+		}
+
+
+
 
 
 
@@ -42,20 +58,25 @@
     // };
 
     //Function to show the text for the correct answer
-    // function showCorrectText(){
-    //   $('.correctAnswerText').removeClass('hide');
-		// 	$('#q1').append($('#1c'));
-    // }
+    function showCorrectText(){
+      console.log(self);
+			self.parent().next().removeClass('hide');
+			nextSelf = self.parent().next();
+			self.parent().append(nextSelf);
+    }
 
     //Function to show the text for the false answer
-    // function showFalseText(){
-    //   $('.falseAnswerText').removeClass('hide');
-		// 	$('#q1').append($('#1f'));
-    // }
+		function showFalseText(){
+			console.log(self);
+			self.parent().next().next().removeClass('hide');
+			secondNextSelf = self.parent().next().next();
+			self.parent().append(secondNextSelf);
+		}
 
     //Function to show the Next Question button appears
-     function showForwardBottom () {
-       $(this).next().removeClass('hide');
+     function showForwardBottom() {
+       self.next().removeClass('hide');
+			 console.log(self);
       };
 
 
@@ -66,8 +87,8 @@
 
     //C. Event Listeners
     //Event listener for clicking the answer button
-    // $('.answer').on('click', isAnswerRight);
-		$('.answer').on('click', showForwardBottom);
+		$('.answer').on('click', answerValue);
+		// $('.answer').on('click', showForwardBottom);
 
     // // Event listener for clicking the next question button
 		$('.forward').on('click', function() {
@@ -76,6 +97,9 @@
 
 
 
+
+
+		//You shouldn't be able to click the same buttom twice
 
 
     // People can't choose more than one answer. when someone checks a second box, the previous checked box gets unchecked
