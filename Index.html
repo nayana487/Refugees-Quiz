@@ -27,71 +27,90 @@
         <li>- You can only choose one answer for each question.</li>
         <li>- You have three minutes to finish the quiz!</li>
       </ul>
-      <a href="#Question1"><button id="begin">Take the Quiz</button></a>
+      <a href="#Quiz"><button id="begin">Take the Quiz</button></a>
     </header>
 
-    <main>
-      <div id="Question1">
-        <h2>Question 1: How many refugees in the world today? (As of Jan 2017)</h2>
-        <ul>
-          <li><input type="radio" id="answer1" value="correct"><label for="answer1">65.3 Millions</label></li>
-          <li><input type="radio" id="answer2" value="wrong"><label for="answer2">25.4 Millions</label></li>
-          <li><input type="radio" id="answer3" value="wrong"><label for="answer3">1.2 Billion</label></li>
-          <li><input type="radio" id="answer4" value="wrong"><label for="answer4">900 Millions</label></li>
-        <ul>
-        <p class="correctAnswerText hide">Correct answer Text</p>
-        <p class="falseAnswerText hide">False answer Text</p>
-        <button class="answer">Answer</button>
-        <button class="hide forward">Next Question</button>
-      </div>
+    <main id="Quiz" >
+      <section id="s1">
+        <div id="Question1">
+          <h2>Question 1: How many refugees in the world today? (As of Jan 2017)</h2>
+          <ul>
+            <li><input type="radio" id="answer1" value="correct"><label for="answer1">65.3 Millions</label></li>
+            <li><input type="radio" id="answer2" value="wrong"><label for="answer2">25.4 Millions</label></li>
+            <li><input type="radio" id="answer3" value="wrong"><label for="answer3">1.2 Billion</label></li>
+            <li><input type="radio" id="answer4" value="wrong"><label for="answer4">900 Millions</label></li>
+          <ul>
+          <button class="answer">Answer</button>
+          <button class="hide forward">Next Question</button>
+        </div>
+        <p class="correctAnswerText hide" id="1c">Correct answer Text</p>
+        <p class="falseAnswerText hide" id="1f">False answer Text</p>
+      </section>
 
-      <div class="hide">
-        <h2>Question 2</h2>
-        <li><input type="checkbox">Answer</li>
-        <li><input type="checkbox">Answer</li>
-        <li><input type="checkbox">Answer</li>
-        <li><input type="checkbox">Answer</li>
+      <section id="s2" class="hide">
+        <div id="q2">
+          <h2>Question 2</h2>
+          <ul>
+            <li><input type="radio" id="answer1" value="correct"><label for="answer1">65.3 Millions</label></li>
+            <li><input type="radio" id="answer2" value="wrong"><label for="answer2">25.4 Millions</label></li>
+            <li><input type="radio" id="answer3" value="wrong"><label for="answer3">1.2 Billion</label></li>
+            <li><input type="radio" id="answer4" value="wrong"><label for="answer4">900 Millions</label></li>
+          <ul>
+          <button class="answer">Answer</button>
+          <button class="hide forward">Next Question</button>
+        </div>
         <p class="correctAnswerText hide">Correct answer Text</p>
         <p class="falseAnswerText hide">False answer Text</p>
-        <button class="answer">Answer</button>
-        <button class="hide forward">Next Question</button>
-      </div>
+      </section>
 
-      <div class="hide">
-        <h2>Question 3</h2>
-        <li><input type="checkbox">Answer</li>
-        <li><input type="checkbox">Answer</li>
-        <li><input type="checkbox">Answer</li>
-        <li><input type="checkbox">Answer</li>
+      <section id="s3" class="hide">
+        <div id="q3">
+          <h2>Question 3</h2>
+          <ul>
+            <li><input type="radio" id="answer5" value="correct"><label for="answer1">65.3 Millions</label></li>
+            <li><input type="radio" id="answer6" value="wrong"><label for="answer2">25.4 Millions</label></li>
+            <li><input type="radio" id="answer7" value="wrong"><label for="answer3">1.2 Billion</label></li>
+            <li><input type="radio" id="answer8" value="wrong"><label for="answer4">900 Millions</label></li>
+          <ul>
+          <button class="answer">Answer</button>
+          <button class="hide forward">Next Question</button>
+        </div>
         <p class="correctAnswerText hide">Correct answer Text</p>
         <p class="falseAnswerText hide">False answer Text</p>
-        <button class="answer">Answer</button>
-        <button class="hide forward">Next Question</button>
-      </div>
+      </section>
 
-      <div class="hide">
-        <h2>Question 4</h2>
-        <li><input type="checkbox">Answer</li>
-        <li><input type="checkbox">Answer</li>
-        <li><input type="checkbox">Answer</li>
-        <li><input type="checkbox">Answer</li>
+      <section id="s4" class="hide">
+        <div id="q4">
+          <h2>Question 4</h2>
+          <ul>
+            <li><input type="radio" id="answer9" value="correct"><label for="answer1">65.3 Millions</label></li>
+            <li><input type="radio" id="answer10" value="wrong"><label for="answer2">25.4 Millions</label></li>
+            <li><input type="radio" id="answer11" value="wrong"><label for="answer3">1.2 Billion</label></li>
+            <li><input type="radio" id="answer12" value="wrong"><label for="answer4">900 Millions</label></li>
+          <ul>
+          <button class="answer">Answer</button>
+          <button class="hide forward">Next Question</button>
+        </div>
         <p class="correctAnswerText hide">Correct answer Text</p>
         <p class="falseAnswerText hide">False answer Text</p>
-        <button class="answer">Answer</button>
-        <button class="hide forward">Next Question</button>
-      </div>
+      </section>
 
-      <div class="hide">
-        <h2>Question 5</h2>
-        <li><input type="checkbox">Answer</li>
-        <li><input type="checkbox">Answer</li>
-        <li><input type="checkbox">Answer</li>
-        <li><input type="checkbox">Answer</li>
+      <section id="s5" class="hide">
+        <div id="q5">
+          <h2>Question 5</h2>
+          <ul>
+            <li><input type="radio" id="answer13" value="correct"><label for="answer1">65.3 Millions</label></li>
+            <li><input type="radio" id="answer14" value="wrong"><label for="answer2">25.4 Millions</label></li>
+            <li><input type="radio" id="answer15" value="wrong"><label for="answer3">1.2 Billion</label></li>
+            <li><input type="radio" id="answer16" value="wrong"><label for="answer4">900 Millions</label></li>
+          <ul>
+          <button class="answer">Answer</button>
+          <button class="hide forward">Next Question</button>
+        </div>
         <p class="correctAnswerText hide">Correct answer Text</p>
         <p class="falseAnswerText hide">False answer Text</p>
-        <button class="answer">Answer</button>
-        <button class="hide forward">Next Question</button>
-      </div>
+      </section>
+
     </main>
 
     <footer>
@@ -101,3 +120,10 @@
   </body>
 
 </html>
+
+<!-- Possible HTML Upgrades
+- Change fints
+- add background image
+- Change colors
+- style radio button
+- Add footer content -->

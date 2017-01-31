@@ -7,17 +7,17 @@
 
     //b. Functions
     //function to include the visitor's name in the page
-    function askForName(){
-    var visitor = prompt('Hello, visiter! What should I call you?');
-      if (visitor === "") {
-        console.log('No Answer');
-      } else if (visitor === null) {
-        console.log('No Answer');
-      } else {
-        $('.visitorName').text(visitor);
-      }
-    }
-    setTimeout(askForName, 1000);
+    // function askForName(){
+    // var visitor = prompt('Hello, visiter! What should I call you?');
+    //   if (visitor === "") {
+    //     console.log('No Answer');
+    //   } else if (visitor === null) {
+    //     console.log('No Answer');
+    //   } else {
+    //     $('.visitorName').text(visitor);
+    //   }
+    // }
+    // setTimeout(askForName, 1000);
 
     //Function to find if the answer is correct
     function isAnswerRight(){
@@ -34,6 +34,9 @@
       }
     }
 
+
+
+
     //Function to disable inputs after an aanswer
     function disableInputs(){
       $('input').attr('disabled', '');
@@ -42,11 +45,13 @@
     //Function to show the text for the correct answer
     function showCorrectText(){
       $('.correctAnswerText').removeClass('hide');
+			$('#Question1').append($('#1c'));
     }
 
     //Function to show the text for the false answer
     function showFalseText(){
       $('.falseAnswerText').removeClass('hide');
+			$('#Question1').append($('#1f'));
     }
 
     //Function to show the Next Question button appears
