@@ -142,7 +142,8 @@
     //C. Event Listeners
 		//Event listener to start the timer
 		$('#begin').on('click', function(event){
-			timerId = setInterval(updateTime, 1000)
+			$('#Quiz').removeClass('hide');
+			timerId = setInterval(updateTime, 1000);
 			$(this).addClass('hide');
 		});
 
@@ -171,12 +172,14 @@
 
 
 
+
+
+		// Make timer count minutes
+
+		// Add high score board functionality
 		// Add functionality to save result after refreshing the browser
 		// Add second player Functionality
-		// Make timer count down
-		// Make timer count minutes
 		// Allow tracking more than one score
-		// Add high score board functionality
 
 
 		// Fix GitHub pages bug
