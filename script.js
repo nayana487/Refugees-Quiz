@@ -11,19 +11,62 @@
 		seconds = 0;
 	  timerId = 0;
 
+		// Cookies Functionality
+		setTimeout(checkCookie, 1000);
+
+		//Set Cookie
+		function setCookie(cname, cvalue, exdays) {
+	    var d = new Date();
+	    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+	    var expires = 'expires='+d.toUTCString();
+	    document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
+	  }
+
+		//Get cookie
+	  function getCookie(cname) {
+	      var name = cname + '=';
+	      var ca = document.cookie.split(';');
+	      for(var i = 0; i < ca.length; i++) {
+	          var c = ca[i];
+	          while (c.charAt(0) == ' ') {
+	              c = c.substring(1);
+	          }
+	          if (c.indexOf(name) == 0) {
+	              return c.substring(name.length, c.length);
+	          }
+	      }
+	      return '';
+	  }
+
+		//Check Coockie
+	  function checkCookie() {
+	      var user = getCookie('username');
+	      if (user != '') {
+	          alert('Welcome again ' + user);
+						$('.visitorName').text(user);
+	      } else {
+	          user = prompt('Hello, visiter! What should I call you?', '');
+	          if (user != '' && user != null) {
+	              setCookie('username', user, 365);
+								$('.visitorName').text(user);
+	          }
+	      }
+	  }
+
+
     //B. Functions
-    //function to include the visitor's name in the page
-    function askForName(){
-    var visitor = prompt('Hello, visiter! What should I call you?');
-      if (visitor === "") {
-        console.log('No Answer');
-      } else if (visitor === null) {
-        console.log('No Answer');
-      } else {
-        $('.visitorName').text(visitor);
-      }
-    }
-    setTimeout(askForName, 1000);
+    //function to include the visitor's name in the page (Replaced)
+    // function askForName(){
+    // var visitor = prompt('Hello, visiter! What should I call you?');
+    //   if (visitor === "") {
+    //     console.log('No Answer');
+    //   } else if (visitor === null) {
+    //     console.log('No Answer');
+    //   } else {
+    //     $('.visitorName').text(visitor);
+    //   }
+    // }
+    // setTimeout(askForName, 1000);
 
 		//Function to count the time
 		function updateTime(){
