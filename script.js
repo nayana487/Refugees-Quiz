@@ -28,6 +28,13 @@
 			$("#timer").html(`${seconds}`)
 		};
 
+		//Function to uncheck the previous answer, when a user choses a second answer
+		function oneAnswer(){
+			$(this).siblings().attr('checked', false);
+			$(this).attr('checked', true);
+
+		};
+
     //Function to find the answer value   //Needs Work
 		function answerValue(){
 			// answerV = $(this).parent().('ul').each('li').('input:checked').val();
@@ -75,13 +82,13 @@
 			self.parent().append(secondNextSelf);
 		}
 
-     //Function to show the Next Question button appears
+     //Function to show the Next Question button
      function showForwardBottom() {
        self.next().removeClass('hide');
 			 console.log(self);
       };
 
-			//Function to disable inputs after an aanswer button is clicked
+			//Function to disable inputs after an answer button is clicked
 	    function disableInputs(){
 				console.log(self);
 	      self.prev().children().attr('disabled', '');
@@ -108,6 +115,9 @@
 			$("#timer2").html(`${seconds}`);
 		});
 
+		// Event listener to allow players to choose only one answer
+    $('input').on('change', oneAnswer)
+
     //Event listener for clicking the answer button
 		$('.answer').on('click', answerValue);
 		// $('.answer').on('click', showForwardBottom);
@@ -120,19 +130,6 @@
 
 
 		//Show score in footer
-
-
-
-
-    // People can't choose more than one answer. when someone checks a second box, the previous checked box gets unchecked
-    $('input').on('change', oneAnswer)
-
-		function oneAnswer(){
-			console.log(this);
-			$(this).siblings().attr('unchecked');
-			$(this).removeAttr('unchecked');
-		};
-
 
 
   })
