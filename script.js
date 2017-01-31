@@ -33,6 +33,8 @@
 			// answerV = $(this).parent().('ul').each('li').('input:checked').val();
 			// $(this).prev().('li').('input:checked').val();
 			// answerV = $(this).parnets('div').('input:checked').val();
+			//   // if ( $('input:checked').val() == "correct" )
+			//   if (document.getElementById('answer1').checked){
 			answerV = 'ncorrect';
 			self = $(this);
 			isAnswerRight()
@@ -41,17 +43,15 @@
 		//Function to find if the answer is right
 		function isAnswerRight(){
 			if ( answerV === 'correct' ){
-				//   // if ( $('input:checked').val() == "correct" )
-				//   if (document.getElementById('answer1').checked){
 				console.log('correct');
 				score++;
 				console.log(score);
-				//     disableInputs();
+				disableInputs();
 				showCorrectText();
 				showForwardBottom();
 			} else {
 				console.log('wrong');
-				//     disableInputs();
+				disableInputs();
 				showFalseText();
 				showForwardBottom();
 			}
@@ -79,6 +79,11 @@
 			 console.log(self);
       };
 
+			//Function to disable inputs after an aanswer button is clicked
+	    function disableInputs(){
+				console.log(self);
+	      self.prev().children().attr('disabled', '');
+	    };
 
 
 
@@ -112,10 +117,7 @@
 		//Function to disable a button once it's clicked
 
 
-		//Function to disable inputs after an aanswer button is clicked
-    // function disableInputs(){
-    //   $('input').attr('disabled', '');
-    // };
+
 
 
     // People can't choose more than one answer. when someone checks a second box, the previous checked box gets unchecked
