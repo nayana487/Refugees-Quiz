@@ -1,3 +1,6 @@
+* {
+  font-family: 'EB Garamond', serif;
+  }
 body {
   margin: 0 auto;
 }
@@ -13,12 +16,14 @@ nav {
   margin-bottom: 0;
 }
 nav h1 {
+  font-family: 'Bree Serif', serif;
   font-size: 40px;
   color: white;
-  padding-bottom: 7px;
+  padding-bottom: 10px;
   color: blue;
 }
 nav p {
+  font-family: 'EB Garamond', serif;
   font-size: 40px;
   display: block;
   color: white;
@@ -43,11 +48,14 @@ header {
 }
 header > p {
   /*font-size: 40px;*/
+  font-family: 'EB Garamond', serif;
   text-align: justify;
 }
 header > h2 {
   /*font-size: 50px;*/
   margin-top: 20px;
+  font-family: 'Bree Serif', serif;
+  padding-bottom: 7px;
 }
 header li {
   /*font-size: 35px;*/
@@ -56,12 +64,13 @@ header li {
   float: right;
   font-size: 40px;
   position: relative;
-  bottom: -45px;
+  bottom: -32px;
   right: 10px;
   background: grey;
   text-decoration: none;
   padding: 20px 25px;
   border-radius: 15px;
+  color: black;
 }
 
 main {
@@ -70,14 +79,15 @@ main {
 }
 div {
   /*height: 100vh;*/
-  font-size: 50px;
   padding: 25px;
   background: #aaaaaa;
   border-radius: 20px;
   margin-bottom: 20px;
+  font-size: 40px;
 }
 div h2 {
   padding-bottom: 15px;
+  font-family: 'Bree Serif', serif;
 }
 div p {
   padding-left: 15px;
