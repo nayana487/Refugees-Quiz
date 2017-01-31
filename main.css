@@ -4,14 +4,17 @@ body {
 nav {
   background: black;
   height: 85px;
-  padding: 15px;
+  padding: 25px 0 0 30px;
   position: fixed;
   width: 1000vw;
+  height: 15vh;
+  margin-top: -130px;
+  margin-bottom: 0;
 }
 nav h1 {
   font-size: 40px;
   color: white;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
   color: blue;
 }
 nav p {
@@ -23,10 +26,15 @@ nav p {
   margin-left: 200px;
 }
 header {
-  height: 100vh;
-  padding: 30px;
-  padding-top: 130px;
-  font-size: 45px;
+  font-size: 40px;
+  color: white;
+  height: 76vh;
+  padding: 5px 30px 45px 30px;
+  margin-top: 120px;
+  background: url("images/636080479657733506210837697_refugee.jpg");
+  /*image source: https://www.theodysseyonline.com/humanist-approach-refugee-crisis*/
+  background-size: cover;
+  Background-position: center bottom;
 }
 /*h1 {
   font-size: 60px;
@@ -47,9 +55,11 @@ header li {
   height: 80px;
   width: 300px;
   font-size: 40px;
-  margin-top: 0;
-  margin-right: 0;
-  padding: 15px;
+  /*margin: 0 30px -50px 0;
+  padding: 15px;*/
+  position: relative;
+  bottom: -45px;
+  right: 15px;
 }
 main {
   margin: 30px 30px 0 30px;;
