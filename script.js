@@ -5,23 +5,25 @@
 		answerV = '';
 		score = 0;
 
+		visitor = 'visitor'
+
 		//Timer Functionality
 		seconds = 0;
 	  timerId = 0;
 
-    //b. Functions
+    //B. Functions
     //function to include the visitor's name in the page
-    // function askForName(){
-    // var visitor = prompt('Hello, visiter! What should I call you?');
-    //   if (visitor === "") {
-    //     console.log('No Answer');
-    //   } else if (visitor === null) {
-    //     console.log('No Answer');
-    //   } else {
-    //     $('.visitorName').text(visitor);
-    //   }
-    // }
-    // setTimeout(askForName, 1000);
+    function askForName(){
+    var visitor = prompt('Hello, visiter! What should I call you?');
+      if (visitor === "") {
+        console.log('No Answer');
+      } else if (visitor === null) {
+        console.log('No Answer');
+      } else {
+        $('.visitorName').text(visitor);
+      }
+    }
+    setTimeout(askForName, 1000);
 
 		//Function to count the time
 		function updateTime(){
@@ -131,6 +133,8 @@
 		// Allow tracking more than one score
 		// Add functionality to save result after refreshing the browser
 		// Add high score board functionality
+		// When someone shows a question, the previous question disappears
+
 
 		// Fix GitHub pages bug
 		// Edit ReadMe file
