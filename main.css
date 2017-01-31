@@ -3,6 +3,10 @@
   }
 body {
   margin: 0 auto;
+  /*background: #8ddff0;*/
+  background: url("images/blue-mist-background.jpg");
+  /*image source: http://www.publicdomainpictures.net/pictures/130000/velka/blue-mist-background.jpg*/
+  background-size: cover;
 }
 
 nav {
@@ -26,7 +30,7 @@ nav p {
   font-family: 'EB Garamond', serif;
   font-size: 40px;
   display: block;
-  color: white;
+  color: #f6c68b;
 }
 .time {
   margin-left: 200px;
@@ -46,31 +50,39 @@ header {
   background-size: cover;
   Background-position: center bottom;
 }
-header > p {
+header > section {
+  background-color: rgba(255, 255, 255, .5);
+  padding: 1px 15px 95px 15px;
+}
+header p {
   /*font-size: 40px;*/
   font-family: 'EB Garamond', serif;
   text-align: justify;
+  color: black;
 }
-header > h2 {
+header h2 {
   /*font-size: 50px;*/
   margin-top: 20px;
   font-family: 'Bree Serif', serif;
   padding-bottom: 7px;
+  color: #f6c68b;
 }
 header li {
-  /*font-size: 35px;*/
+  /*color: #792583;*/
+  color: black;
 }
 #begin {
   float: right;
   font-size: 40px;
   position: relative;
-  bottom: -32px;
+  bottom: -110px;
   right: 10px;
   background: grey;
   text-decoration: none;
   padding: 20px 25px;
   border-radius: 15px;
-  color: black;
+  color: #f48529;
+  /*color: #f6c68b;*/
 }
 
 main {
@@ -80,7 +92,7 @@ main {
 div {
   /*height: 100vh;*/
   padding: 25px;
-  background: #aaaaaa;
+  background: #205ee3;
   border-radius: 20px;
   margin-bottom: 20px;
   font-size: 40px;
@@ -88,6 +100,7 @@ div {
 div h2 {
   padding-bottom: 15px;
   font-family: 'Bree Serif', serif;
+  /*color: #205ee3;*/
 }
 div p {
   padding-left: 15px;
@@ -99,6 +112,9 @@ div button {
   font-size: 50px;
   margin-top: 15px;
   border-radius: 15px;
+  background: #8ddff0;
+  font-weight: 600;
+  padding: 0 15px 10px 15px;
 }
 .forward {
   float: right;
@@ -108,10 +124,11 @@ div button {
   visibility: hidden;
 }
 div .falseAnswerText {
-  color: red;
+  color: #3e1958;
+  font-weight: bold;
 }
 div .correctAnswerText {
-  color: green;
+  color: white;
 }
 .answer {
   margin-bottom: 20px;
@@ -122,7 +139,7 @@ div .correctAnswerText {
 
 footer {
   font-size: 50px;
-  color: blue;
+  color: #792583;
   margin: 0 auto;
   padding: 15px;
   padding-bottom: 45px;
