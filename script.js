@@ -125,12 +125,15 @@
 
 
     // People can't choose more than one answer. when someone checks a second box, the previous checked box gets unchecked
-    // $('li').on('click', oneAnswer)
-		//
-		// function oneAnswer(){
-		// $('input').each.attr('unchecked');
-		// $('input').removeAttr('unchecked');
-		// };
+    $('input').on('change', oneAnswer)
+
+		function oneAnswer(){
+			console.log(this);
+			$(this).attr('unchecked');
+			// $(this).parent().children().attr('unchecked');
+			// $(this).parent().children().attr('unchecked');
+			// $(this).removeAttr('unchecked');
+		};
 
 
 
