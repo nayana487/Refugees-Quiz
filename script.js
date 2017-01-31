@@ -11,9 +11,10 @@
 		seconds = 0;
 	  timerId = 0;
 
+
+    //B. Functions
 		// Cookies Functionality
 		setTimeout(checkCookie, 1000);
-
 		//Set Cookie
 		function setCookie(cname, cvalue, exdays) {
 	    var d = new Date();
@@ -21,7 +22,6 @@
 	    var expires = 'expires='+d.toUTCString();
 	    document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
 	  }
-
 		//Get cookie
 	  function getCookie(cname) {
 	      var name = cname + '=';
@@ -37,7 +37,6 @@
 	      }
 	      return '';
 	  }
-
 		//Check Coockie
 	  function checkCookie() {
 	      var user = getCookie('username');
@@ -54,7 +53,7 @@
 	  }
 
 
-    //B. Functions
+
     //function to include the visitor's name in the page (Replaced)
     // function askForName(){
     // var visitor = prompt('Hello, visiter! What should I call you?');
@@ -142,18 +141,18 @@
 
     //C. Event Listeners
 		//Event listener to start the timer
-		$("#begin").on("click", function(){
+		$('#begin').on('click', function(event){
 			timerId = setInterval(updateTime, 1000)
-			$(this).attr('disabled', '');
+			$(this).addClass('hide');
 		});
 
 		//Event listener to finish the quiz
-		$(".finish").on("click", function(){
+		$('.finish').on('click', function(){
 		  clearInterval(timerId);
 			$(this).attr('disabled', '');
 			$('footer').removeClass('hide');
-			$("#playerScore").html(`${score}`);
-			$("#timer2").html(`${seconds}`);
+			$('#playerScore').html(`${score}`);
+			$('#timer2').html(`${seconds}`);
 		});
 
 		// Event listener to allow players to choose only one answer
