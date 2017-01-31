@@ -4,6 +4,9 @@
     //Setting variable for score, to keep track of progress
     score = 0;
 
+		//Timer Functionality
+		seconds = 0;
+	  timerId = 0;
 
     //b. Functions
     //function to include the visitor's name in the page
@@ -19,7 +22,13 @@
     // }
     // setTimeout(askForName, 1000);
 
-    //Function to find if the answer is correct   //Needs Work
+		//Function to count the time
+		function updateTime(){
+			seconds++
+			$("#timer").html(`${seconds}`)
+		};
+
+    //Function to find the answer value   //Needs Work
 		function answerValue(){
 			// answerV = $(this).parent().('ul').each('li').('input:checked').val();
 			// $(this).prev().('li').('input:checked').val();
@@ -29,6 +38,7 @@
 			isAnswerRight()
 		}
 
+		//Function to find if the answer is right
 		function isAnswerRight(){
 			if ( answerV === 'correct' ){
 				//   // if ( $('input:checked').val() == "correct" )
@@ -47,16 +57,6 @@
 			}
 		}
 
-
-
-
-
-
-    //Function to disable inputs after an aanswer
-    // function disableInputs(){
-    //   $('input').attr('disabled', '');
-    // };
-
     //Function to show the text for the correct answer
     function showCorrectText(){
       console.log(self);
@@ -73,7 +73,7 @@
 			self.parent().append(secondNextSelf);
 		}
 
-    //Function to show the Next Question button appears
+     //Function to show the Next Question button appears
      function showForwardBottom() {
        self.next().removeClass('hide');
 			 console.log(self);
@@ -86,6 +86,16 @@
 
 
     //C. Event Listeners
+		//Event listener to start the timer
+		$("#begin").on("click", function(){
+			timerId = setInterval(updateTime, 1000)
+		});
+
+		//Event listener to stop the timer
+		$(".finish").on("click", function(){
+		  clearInterval(timerId);
+		});
+
     //Event listener for clicking the answer button
 		$('.answer').on('click', answerValue);
 		// $('.answer').on('click', showForwardBottom);
@@ -99,7 +109,13 @@
 
 
 
-		//You shouldn't be able to click the same buttom twice
+		//Function to disable a button once it's clicked
+
+
+		//Function to disable inputs after an aanswer button is clicked
+    // function disableInputs(){
+    //   $('input').attr('disabled', '');
+    // };
 
 
     // People can't choose more than one answer. when someone checks a second box, the previous checked box gets unchecked
@@ -109,5 +125,7 @@
 		// $('input').each.attr('unchecked');
 		// $('input').removeAttr('unchecked');
 		// };
+
+
 
   })
