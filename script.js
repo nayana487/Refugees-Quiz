@@ -129,10 +129,8 @@
 
 		function oneAnswer(){
 			console.log(this);
-			$(this).attr('unchecked');
-			// $(this).parent().children().attr('unchecked');
-			// $(this).parent().children().attr('unchecked');
-			// $(this).removeAttr('unchecked');
+			$(this).siblings().attr('unchecked');
+			$(this).removeAttr('unchecked');
 		};
 
 
