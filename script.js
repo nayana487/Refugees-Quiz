@@ -49,11 +49,13 @@
 				disableInputs();
 				showCorrectText();
 				showForwardBottom();
+				self.attr('disabled', '');
 			} else {
 				console.log('wrong');
 				disableInputs();
 				showFalseText();
 				showForwardBottom();
+				self.attr('disabled', '');
 			}
 		}
 
@@ -94,11 +96,13 @@
 		//Event listener to start the timer
 		$("#begin").on("click", function(){
 			timerId = setInterval(updateTime, 1000)
+			$(this).attr('disabled', '');
 		});
 
 		//Event listener to stop the timer
 		$(".finish").on("click", function(){
 		  clearInterval(timerId);
+			$(this).attr('disabled', '');
 		});
 
     //Event listener for clicking the answer button
@@ -108,13 +112,10 @@
     // // Event listener for clicking the next question button
 		$('.forward').on('click', function() {
       $(this).parents('section').next().removeClass('hide');
+			$(this).attr('disabled', '');
     });
 
 
-
-
-
-		//Function to disable a button once it's clicked
 
 
 
