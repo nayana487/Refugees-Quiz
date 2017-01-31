@@ -16,7 +16,7 @@
       <p>Hello,
         <span class="visitorName">visitor</span>!
         <span class="time">Timer: <span id="timer">00</span></span>
-        <span id="topscore">Score: <span class="playerScore">0</span>/5</span>
+        <span id="topscore">Score: <span class="playerScore">0</span>/10</span>
       </p>
     </nav>
 
@@ -108,16 +108,98 @@
             <input type="radio" id="answer20" value="correct"><label for="answer4">84 Thousands</label><br>
           </p>
           <button class="answer">Answer</button>
-          <button class="finish hide">Finish</button>
+          <button class="forward hide">Next Question</button>
         </div>
         <p class="correctAnswerText hide">Correct! You got it right! You are 1 point up!</p>
         <p class="falseAnswerText hide">Actually, the United States admitted only 84 tousand refugees in the fiscal year ending in Septemer 2016.</p>
       </section>
 
+      <section id="s6" class="hide">
+        <div id="q6">
+          <h2>Question 6: Since 1975, there has been only one year in which the United States admitted more than 200 thousand refugees. Which president and year was this?</h2>
+          <p>
+            <input type="radio" id="answer21" value="wrong"><label for="answer1">2011, President barack Obama</label><br>
+            <input type="radio" id="answer22" value="wrong"><label for="answer2">2005, President George W. Bush</label><br>
+            <input type="radio" id="answer23" value="correct"><label for="answer3">1980, President Jimmy Carter</label><br>
+            <input type="radio" id="answer24" value="wrong"><label for="answer4">1983, President Ronald Reagan</label><br>
+          </p>
+          <button class="answer">Answer</button>
+          <button class="forward hide">Next Question</button>
+        </div>
+        <p class="correctAnswerText hide">Correct! You got it right! You are 1 point up!</p>
+        <p class="falseAnswerText hide">Not really! This happened in 1980, under President Jimmy Carter after the US Refugee Act of 1980 raised the overall quotas of refugees.</p>
+      </section>
+
+      <section id="s7" class="hide">
+        <div id="q7">
+          <h2>Question 7: In fiscal 2016, the highest number of refugees admitted to the United States came from:</h2>
+          <p>
+            <input type="radio" id="answer25" value="wrong"><label for="answer1">Somalia</label><br>
+            <input type="radio" id="answer26" value="wrong"><label for="answer2">Syria</label><br>
+            <input type="radio" id="answer27" value="correct"><label for="answer3">Democratic Republic of Congo</label><br>
+            <input type="radio" id="answer28" value="wrong"><label for="answer4">Israel</label><br>
+          </p>
+          <button class="answer">Answer</button>
+          <button class="forward hide">Next Question</button>
+        </div>
+        <p class="correctAnswerText hide">Correct! You got it right! You are 1 point up!</p>
+        <p class="falseAnswerText hide">Not really! The highest number of refugees in 2016 came from the Democratic Republic of Congo (16,370 refugees), followed by Syria (12,587), Burma (12,347), Iraq (9,880) and Somalia (9,020).</p>
+      </section>
+
+
+      <section id="s8" class="hide">
+        <div id="q8">
+          <h2>Question 8: How many of the refugees admitted to the United States in 2016 were Muslims?</h2>
+          <p>
+            <input type="radio" id="answer29" value="wrong"><label for="answer1">85%</label><br>
+            <input type="radio" id="answer30" value="wrong"><label for="answer2">20%</label><br>
+            <input type="radio" id="answer31" value="correct"><label for="answer3">46%</label><br>
+            <input type="radio" id="answer32" value="wrong"><label for="answer4">64%</label><br>
+          </p>
+          <button class="answer">Answer</button>
+          <button class="forward hide">Next Question</button>
+        </div>
+        <p class="correctAnswerText hide">Correct! You got it right! You are 1 point up!</p>
+        <p class="falseAnswerText hide">Not really! Muslims made up nearly 46% of refugee admissions in 2016.</p>
+      </section>
+
+
+      <section id="s9" class="hide">
+        <div id="q9">
+          <h2>Question 9: Which state of the United States took the heighst number of refugees in 2016?</h2>
+          <p>
+            <input type="radio" id="answer33" value="correct"><label for="answer1">California</label><br>
+            <input type="radio" id="answer34" value="wrong"><label for="answer2">New York</label><br>
+            <input type="radio" id="answer35" value="wrong"><label for="answer3">North Carolina</label><br>
+            <input type="radio" id="answer36" value="wrong"><label for="answer4">New Hampshire</label><br>
+          </p>
+          <button class="answer">Answer</button>
+          <button class="forward hide">Next Question</button>
+        </div>
+        <p class="correctAnswerText hide">Correct! You got it right! You are 1 point up!</p>
+        <p class="falseAnswerText hide">Not really! California resettled 7,909 refugees in 2016, more than any other state. Texas came second, as it took 7,803 refugees.</p>
+      </section>
+
+      <section id="s10" class="hide">
+        <div id="q10">
+          <h2>Question 10: Which state of the United States didn't take any refugees in 2016?</h2>
+          <p>
+            <input type="radio" id="answer37" value="wrong"><label for="answer1">Texas</label><br>
+            <input type="radio" id="answer138" value="wrong"><label for="answer2">New Mexico</label><br>
+            <input type="radio" id="answer39" value="correct"><label for="answer3">Delaware</label><br>
+            <input type="radio" id="answer40" value="wrong"><label for="answer4">Nevada</label><br>
+          </p>
+          <button class="answer">Answer</button>
+          <button class="finish hide">Finish</button>
+        </div>
+        <p class="correctAnswerText hide">Correct! You got it right! You are 1 point up!</p>
+        <p class="falseAnswerText hide">Not really! Both Delaware and Hawaii took in no refugees in 2016.</p>
+      </section>
+
     </main>
 
     <footer class="hide">
-      <p>You have scored <span class="playerScore">0</span> out of 5.<br>
+      <p>You have scored <span class="playerScore">0</span> out of 10.<br>
         You took <span id="timer2"></span> seconds to finish the quiz.</p>
     </footer>
 
@@ -130,10 +212,14 @@
 
 </html>
 
+
+
+
+
+
 <!-- Possible HTML Upgrades
 - Change fonts
 - Change colors
-- add more questions
 - style radio button
 - limit main height 		// When someone shows a question, the previous question disappears
 - Remove clutter: unused IDs
