@@ -20,44 +20,44 @@
     // setTimeout(askForName, 1000);
 
     //Function to find if the answer is correct
-    function isAnswerRight(){
-      // if ( $('#answer1:checked') )    //jQuery syntax needed
-      if (document.getElementById('answer1').checked){
-        score++;
-        disableInputs();
-        showCorrectText();
-        showForwardBottom();
-      } else {
-        disableInputs();
-        showFalseText();
-        showForwardBottom();
-      }
-    }
+    // function isAnswerRight(){
+    //   // if ( $('input:checked').val() == "correct" )
+    //   if (document.getElementById('answer1').checked){
+    //     score++;
+    //     disableInputs();
+    //     showCorrectText();
+    //     showForwardBottom();
+    //   } else {
+    //     disableInputs();
+    //     showFalseText();
+    //     showForwardBottom();
+    //   }
+    // }
 
 
 
 
     //Function to disable inputs after an aanswer
-    function disableInputs(){
-      $('input').attr('disabled', '');
-    };
+    // function disableInputs(){
+    //   $('input').attr('disabled', '');
+    // };
 
     //Function to show the text for the correct answer
-    function showCorrectText(){
-      $('.correctAnswerText').removeClass('hide');
-			$('#Question1').append($('#1c'));
-    }
+    // function showCorrectText(){
+    //   $('.correctAnswerText').removeClass('hide');
+		// 	$('#q1').append($('#1c'));
+    // }
 
     //Function to show the text for the false answer
-    function showFalseText(){
-      $('.falseAnswerText').removeClass('hide');
-			$('#Question1').append($('#1f'));
-    }
+    // function showFalseText(){
+    //   $('.falseAnswerText').removeClass('hide');
+		// 	$('#q1').append($('#1f'));
+    // }
 
-    //Function to show the Next Question button appears
-     function showForwardBottom () {
-       $('.forward').removeClass('hide');
-      };
+    // //Function to show the Next Question button appears
+    //  function showForwardBottom () {
+    //    $('.forward').removeClass('hide');
+    //   };
 
 
 
@@ -67,16 +67,13 @@
 
     //C. Event Listeners
     //Event listener for clicking the answer button
-    $('.answer').on('click', isAnswerRight);
-
-    // Event listener for clicking the next question button
+    // $('.answer').on('click', isAnswerRight);
+		//
+		
+    // // Event listener for clicking the next question button
 		$('.forward').on('click', function() {
-      $(this).parent().next().removeClass('hide');
-    })
-
-
-
-
+      $(this).parents('section').next().removeClass('hide');
+    });
 
 
 
