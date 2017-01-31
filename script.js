@@ -1,8 +1,9 @@
 	$(document).ready(function(){
 
     //A. Setting variables
-    //Setting variable for score, to keep track of progress
-    score = 0;
+    //Setting variables for answers and score, to keep track of progress
+		answerV = '';
+		score = 0;
 
 		//Timer Functionality
 		seconds = 0;
@@ -35,22 +36,17 @@
 
 		};
 
-    //Function to find the answer value   //Needs Work
+    //Function to find the answer value
 		function answerValue(){
-			// answerV = $(this).parent().('ul').each('li').('input:checked').val();
-			// $(this).prev().('li').('input:checked').val();
-			// answerV = $(this).parnets('div').('input:checked').val();
-			//   // if ( $('input:checked').val() == "correct" )
-			//   if (document.getElementById('answer1').checked){
-			answerV = 'correct';
 			self = $(this);
+			answerV = self.parents('div').children('p').children('input:radio:checked').val();
+			console.log(answerV);
 			isAnswerRight()
 		}
 
 		//Function to find if the answer is right
 		function isAnswerRight(){
 			if ( answerV === 'correct' ){
-				console.log('correct');
 				score++;
 				console.log(score);
 				disableInputs();
@@ -58,7 +54,7 @@
 				showForwardBottom();
 				self.attr('disabled', '');
 			} else {
-				console.log('wrong');
+				console.log(score);
 				disableInputs();
 				showFalseText();
 				showForwardBottom();
@@ -68,7 +64,7 @@
 
     //Function to show the text for the correct answer
     function showCorrectText(){
-      console.log(self);
+      // console.log(self);
 			self.parent().next().removeClass('hide');
 			nextSelf = self.parent().next();
 			self.parent().append(nextSelf);
@@ -76,7 +72,7 @@
 
     //Function to show the text for the false answer
 		function showFalseText(){
-			console.log(self);
+			// console.log(self);
 			self.parent().next().next().removeClass('hide');
 			secondNextSelf = self.parent().next().next();
 			self.parent().append(secondNextSelf);
@@ -85,7 +81,7 @@
      //Function to show the Next Question button
      function showForwardBottom() {
        self.next().removeClass('hide');
-			 console.log(self);
+			//  console.log(self);
       };
 
 			//Function to disable inputs after an answer button is clicked
@@ -130,6 +126,16 @@
 
 
 		//Show score in footer
+		// Add second player Functionality
+		// Make timer count down
+		// Make timer count minutes
+		// Allow tracking more than one score
+		// Add functionality to save result after refreshing the browser
+		// Add high score board functionality
+
+		// Fix GitHub pages bug
+		// Edit ReadMe file
+
 
 
   })
