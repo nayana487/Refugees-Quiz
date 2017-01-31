@@ -11,8 +11,10 @@
 	  timerId = 0;
 
 
+
+
     //B. Functions
-		// Cookies Functionality for visitor's name
+		// Cookies Functionality for visitor's name (Coockie functionality was copied from http://www.w3schools.com/js/js_cookies.asp)
 		setTimeout(checkCookie, 1000);
 		//Set Cookie
 		function setCookie(cname, cvalue, exdays) {
@@ -167,18 +169,16 @@
     });
 
 
+
+
+		// Add functionality to save result after refreshing the browser
 		// Add second player Functionality
 		// Make timer count down
 		// Make timer count minutes
 		// Allow tracking more than one score
-		// Add functionality to save result after refreshing the browser
 		// Add high score board functionality
-		// When someone shows a question, the previous question disappears
 
 
 		// Fix GitHub pages bug
 		// Edit ReadMe file
-
-
-
   })
