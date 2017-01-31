@@ -35,7 +35,7 @@
 			// answerV = $(this).parnets('div').('input:checked').val();
 			//   // if ( $('input:checked').val() == "correct" )
 			//   if (document.getElementById('answer1').checked){
-			answerV = 'ncorrect';
+			answerV = 'correct';
 			self = $(this);
 			isAnswerRight()
 		}
@@ -103,6 +103,9 @@
 		$(".finish").on("click", function(){
 		  clearInterval(timerId);
 			$(this).attr('disabled', '');
+			$('footer').removeClass('hide');
+			$("playerScore").html(`${score}`);
+			$("#timer2").html(`${seconds}`);
 		});
 
     //Event listener for clicking the answer button
@@ -116,7 +119,7 @@
     });
 
 
-
+		//Show score in footer
 
 
 
