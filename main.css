@@ -8,6 +8,9 @@ body {
   /*image source: http://www.publicdomainpictures.net/pictures/130000/velka/blue-mist-background.jpg*/
   background-size: cover;
 }
+.hide {
+  visibility: hidden;
+}
 
 nav {
   background: black;
@@ -32,7 +35,7 @@ nav p {
   display: block;
   color: #f6c68b;
 }
-.time {
+#time {
   margin-left: 200px;
 }
 #topscore {
@@ -119,9 +122,10 @@ div button {
 .forward {
   float: right;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
-.hide {
-  visibility: hidden;
+.answer {
+  margin-bottom: 20px;
 }
 div .falseAnswerText {
   color: #3e1958;
@@ -129,12 +133,6 @@ div .falseAnswerText {
 }
 div .correctAnswerText {
   color: white;
-}
-.answer {
-  margin-bottom: 20px;
-}
-.forward {
-  margin-bottom: 20px;
 }
 
 footer {

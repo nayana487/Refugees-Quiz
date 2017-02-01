@@ -68,7 +68,7 @@
 		//Function to count the time
 		function updateTime(){
 			seconds++
-			$("#timer").html(`${seconds}`)
+			$(".timer").html(`${seconds}`)
 		};
 
 		//Function to uncheck the previous answer, when a user choses a second answer
@@ -153,7 +153,7 @@
 			$(this).attr('disabled', '');
 			$('footer').removeClass('hide');
 			$('.playerScore').html(`${score}`);
-			$('#timer2').html(`${seconds}`);
+			$('.timer').html(`${seconds}`);
 		});
 
 		// Event listener to allow players to choose only one answer
@@ -170,24 +170,4 @@
     });
 
 
-
-		//To Do Next 
-
-		// - style radio button
-		// - limit main height
-		// - Remove clutter: unused IDs
-		// - Make the page mobile responsive
-
-		// Make timer count minutes
-
-		// Add high score board functionality
-		// Add functionality to save result after refreshing the browser
-		// Add second player Functionality
-		// Allow tracking more than one score
-
-
-		// Fix GitHub pages bug
-		// Edit ReadMe file
-
-		//Your HTML/CSS should pass the HTML5 Validator and CSS Validator
-  })
+	})

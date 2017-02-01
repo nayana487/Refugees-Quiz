@@ -17,7 +17,7 @@
       <h1>How Much Do You Know About The Refugee Crisis?</h1>
       <p>Hello,
         <span class="visitorName">visitor</span>!
-        <span class="time">Timer: <span id="timer">00</span></span>
+        <span id="time">Timer: <span class="timer">00</span></span>
         <span id="topscore">Score: <span class="playerScore">0</span>/10</span>
       </p>
     </nav>
@@ -37,13 +37,13 @@
 
     <main id="Quiz" class="hide">
       <section id="s1">
-        <div id="q1">
+        <div>
           <h2>Question 1: How many refugees in the world today? (As of Jan 2017)</h2>
           <p class="options">
-            <input type="radio" id="answer1" value="correct"><label for="answer1">65.3 Millions</label><br>
-            <input type="radio" id="answer2" value="wrong"><label for="answer2">25.4 Millions</label><br>
-            <input type="radio" id="answer3" value="wrong"><label for="answer3">1.2 Billion</label><br>
-            <input type="radio" id="answer4" value="wrong"><label for="answer4">900 Millions</label><br>
+            <input type="radio" value="correct"><label for="answer1">65.3 Millions</label><br>
+            <input type="radio" value="wrong"><label for="answer2">25.4 Millions</label><br>
+            <input type="radio" value="wrong"><label for="answer3">1.2 Billion</label><br>
+            <input type="radio" value="wrong"><label for="answer4">900 Millions</label><br>
           </p>
           <button class="answer">Answer</button>
           <button class="forward hide">Next Question</button>
@@ -53,13 +53,13 @@
       </section>
 
       <section id="s2" class="hide">
-        <div id="q2">
+        <div>
           <h2>Question 2: Which European country hosts the highest number of refugees?</h2>
           <p>
-            <input type="radio" id="answer5" value="wrong"><label for="answer1">Germany</label><br>
-            <input type="radio" id="answer6" value="correct"><label for="answer2">Turkey</label><br>
-            <input type="radio" id="answer7" value="wrong"><label for="answer3">The United Kingdom</label><br>
-            <input type="radio" id="answer8" value="wrong"><label for="answer4">France</label><br>
+            <input type="radio" value="wrong"><label for="answer1">Germany</label><br>
+            <input type="radio" value="correct"><label for="answer2">Turkey</label><br>
+            <input type="radio" value="wrong"><label for="answer3">The United Kingdom</label><br>
+            <input type="radio" value="wrong"><label for="answer4">France</label><br>
           </p>
           <button class="answer">Answer</button>
           <button class="forward hide">Next Question</button>
@@ -69,13 +69,13 @@
       </section>
 
       <section id="s3" class="hide">
-        <div id="q3">
+        <div>
           <h2>Question 3: Which country hosts the highest number of refugees in the world?</h2>
           <p>
-            <input type="radio" id="answer9" value="wrong"><label for="answer1">The United States</label><br>
-            <input type="radio" id="answer10" value="wrong"><label for="answer2">Jordan</label><br>
-            <input type="radio" id="answer11" value="wrong"><label for="answer3">Germany</label><br>
-            <input type="radio" id="answer12" value="correct"><label for="answer4">Turkey</label><br>
+            <input type="radio" value="wrong"><label for="answer1">The United States</label><br>
+            <input type="radio" value="wrong"><label for="answer2">Jordan</label><br>
+            <input type="radio" value="wrong"><label for="answer3">Germany</label><br>
+            <input type="radio" value="correct"><label for="answer4">Turkey</label><br>
           </p>
           <button class="answer">Answer</button>
           <button class="forward hide">Next Question</button>
@@ -85,13 +85,13 @@
       </section>
 
       <section id="s4" class="hide">
-        <div id="q4">
+        <div>
           <h2>Question 4: The highest number of refugees today come from:</h2>
           <p>
-            <input type="radio" id="answer13" value="wrong"><label for="answer1">Somalia</label><br>
-            <input type="radio" id="answer14" value="correct"><label for="answer2">Syria</label><br>
-            <input type="radio" id="answer15" value="wrong"><label for="answer3">Afghanistan</label><br>
-            <input type="radio" id="answer16" value="wrong"><label for="answer4">Palestine</label><br>
+            <input type="radio" value="wrong"><label for="answer1">Somalia</label><br>
+            <input type="radio" value="correct"><label for="answer2">Syria</label><br>
+            <input type="radio" ivalue="wrong"><label for="answer3">Afghanistan</label><br>
+            <input type="radio" value="wrong"><label for="answer4">Palestine</label><br>
           </p>
           <button class="answer">Answer</button>
           <button class="forward hide">Next Question</button>
@@ -101,13 +101,13 @@
       </section>
 
       <section id="s5" class="hide">
-        <div id="q5">
+        <div>
           <h2>Question 5: How many refugees were admitted to the United States in the fiscal year 2016?</h2>
           <p>
-            <input type="radio" id="answer17" value="wrong"><label for="answer1">237 thousands</label><br>
-            <input type="radio" id="answer18" value="wrong"><label for="answer2">1.6 Millions</label><br>
-            <input type="radio" id="answer19" value="wrong"><label for="answer3">123 Millions</label><br>
-            <input type="radio" id="answer20" value="correct"><label for="answer4">84 Thousands</label><br>
+            <input type="radio" value="wrong"><label for="answer1">237 thousands</label><br>
+            <input type="radio" value="wrong"><label for="answer2">1.6 Millions</label><br>
+            <input type="radio" value="wrong"><label for="answer3">123 Millions</label><br>
+            <input type="radio" value="correct"><label for="answer4">84 Thousands</label><br>
           </p>
           <button class="answer">Answer</button>
           <button class="forward hide">Next Question</button>
@@ -117,13 +117,13 @@
       </section>
 
       <section id="s6" class="hide">
-        <div id="q6">
+        <div>
           <h2>Question 6: Since 1975, there has been only one year in which the United States admitted more than 200 thousand refugees. Which president and year was this?</h2>
           <p>
-            <input type="radio" id="answer21" value="wrong"><label for="answer1">2011, President barack Obama</label><br>
-            <input type="radio" id="answer22" value="wrong"><label for="answer2">2005, President George W. Bush</label><br>
-            <input type="radio" id="answer23" value="correct"><label for="answer3">1980, President Jimmy Carter</label><br>
-            <input type="radio" id="answer24" value="wrong"><label for="answer4">1983, President Ronald Reagan</label><br>
+            <input type="radio" value="wrong"><label for="answer1">2011, President barack Obama</label><br>
+            <input type="radio" value="wrong"><label for="answer2">2005, President George W. Bush</label><br>
+            <input type="radio" value="correct"><label for="answer3">1980, President Jimmy Carter</label><br>
+            <input type="radio" value="wrong"><label for="answer4">1983, President Ronald Reagan</label><br>
           </p>
           <button class="answer">Answer</button>
           <button class="forward hide">Next Question</button>
@@ -133,13 +133,13 @@
       </section>
 
       <section id="s7" class="hide">
-        <div id="q7">
+        <div>
           <h2>Question 7: In fiscal 2016, the highest number of refugees admitted to the United States came from:</h2>
           <p>
-            <input type="radio" id="answer25" value="wrong"><label for="answer1">Somalia</label><br>
-            <input type="radio" id="answer26" value="wrong"><label for="answer2">Syria</label><br>
-            <input type="radio" id="answer27" value="correct"><label for="answer3">Democratic Republic of Congo</label><br>
-            <input type="radio" id="answer28" value="wrong"><label for="answer4">Israel</label><br>
+            <input type="radio" value="wrong"><label for="answer1">Somalia</label><br>
+            <input type="radio" value="wrong"><label for="answer2">Syria</label><br>
+            <input type="radio" value="correct"><label for="answer3">Democratic Republic of Congo</label><br>
+            <input type="radio" value="wrong"><label for="answer4">Israel</label><br>
           </p>
           <button class="answer">Answer</button>
           <button class="forward hide">Next Question</button>
@@ -150,13 +150,13 @@
 
 
       <section id="s8" class="hide">
-        <div id="q8">
+        <div>
           <h2>Question 8: How many of the refugees admitted to the United States in 2016 were Muslims?</h2>
           <p>
-            <input type="radio" id="answer29" value="wrong"><label for="answer1">85%</label><br>
-            <input type="radio" id="answer30" value="wrong"><label for="answer2">20%</label><br>
-            <input type="radio" id="answer31" value="correct"><label for="answer3">46%</label><br>
-            <input type="radio" id="answer32" value="wrong"><label for="answer4">64%</label><br>
+            <input type="radio" value="wrong"><label for="answer1">85%</label><br>
+            <input type="radio" value="wrong"><label for="answer2">20%</label><br>
+            <input type="radio" value="correct"><label for="answer3">46%</label><br>
+            <input type="radio" value="wrong"><label for="answer4">64%</label><br>
           </p>
           <button class="answer">Answer</button>
           <button class="forward hide">Next Question</button>
@@ -167,13 +167,13 @@
 
 
       <section id="s9" class="hide">
-        <div id="q9">
+        <div>
           <h2>Question 9: Which state of the United States took the heighst number of refugees in 2016?</h2>
           <p>
-            <input type="radio" id="answer33" value="correct"><label for="answer1">California</label><br>
-            <input type="radio" id="answer34" value="wrong"><label for="answer2">New York</label><br>
-            <input type="radio" id="answer35" value="wrong"><label for="answer3">North Carolina</label><br>
-            <input type="radio" id="answer36" value="wrong"><label for="answer4">New Hampshire</label><br>
+            <input type="radio" value="correct"><label for="answer1">California</label><br>
+            <input type="radio" value="wrong"><label for="answer2">New York</label><br>
+            <input type="radio" value="wrong"><label for="answer3">North Carolina</label><br>
+            <input type="radio" value="wrong"><label for="answer4">New Hampshire</label><br>
           </p>
           <button class="answer">Answer</button>
           <button class="forward hide">Next Question</button>
@@ -183,13 +183,13 @@
       </section>
 
       <section id="s10" class="hide">
-        <div id="q10">
+        <div>
           <h2>Question 10: Which state of the United States didn't take any refugees in 2016?</h2>
           <p>
-            <input type="radio" id="answer37" value="wrong"><label for="answer1">Texas</label><br>
-            <input type="radio" id="answer138" value="wrong"><label for="answer2">New Mexico</label><br>
-            <input type="radio" id="answer39" value="correct"><label for="answer3">Delaware</label><br>
-            <input type="radio" id="answer40" value="wrong"><label for="answer4">Nevada</label><br>
+            <input type="radio" value="wrong"><label for="answer1">Texas</label><br>
+            <input type="radio" value="wrong"><label for="answer2">New Mexico</label><br>
+            <input type="radio" value="correct"><label for="answer3">Delaware</label><br>
+            <input type="radio" value="wrong"><label for="answer4">Nevada</label><br>
           </p>
           <button class="answer">Answer</button>
           <button class="finish hide">Finish</button>
@@ -202,7 +202,7 @@
 
     <footer class="hide">
       <p>You have scored <span class="playerScore">0</span> out of 10.<br>
-        You took <span id="timer2">0</span> seconds to finish the quiz.</p>
+        You took <span class="timer">0</span> seconds to finish the quiz.</p>
     </footer>
 
     <article>
