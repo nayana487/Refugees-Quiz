@@ -7,9 +7,6 @@
 # Technology
   The quiz uses javascript for tracking users and performance, and for DOM manipulation. The game won't work if Javascript is disabled in your browser. The game won't be able to track your name or score if your browser doesn't allow session cookies.
 
-# Unsolved Problems
-  TBA
-
 # User Stories:  
   1. As a user, I should see the instructions of the game first, to know how to play it.
   2. As a user, I should be able to add my name, so it's clear that the result is mine.

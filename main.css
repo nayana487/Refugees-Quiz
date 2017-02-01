@@ -7,14 +7,19 @@ body {
   background: url("images/blue-mist-background.jpg");
   /*image source: http://www.publicdomainpictures.net/pictures/130000/velka/blue-mist-background.jpg*/
   background-size: cover;
+  /*display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;*/
 }
 .hide {
   visibility: hidden;
 }
 
 nav {
-  background: black;
-  height: 85px;
+  background-color: black;
+  height: 185px;
   padding: 25px 0 0 30px;
   position: fixed;
   width: 1000vw;
@@ -111,6 +116,11 @@ div p {
 div label {
   padding-left: 20px;
 }
+div label:hover {
+	color: #FFFFFF;
+}
+
+
 div button {
   font-size: 50px;
   margin-top: 15px;
@@ -143,12 +153,12 @@ footer {
   margin: 0 auto;
   padding: 10px;
   text-align: center;
+  width: 100vw;
 }
 footer p {
   margin-bottom: 5px;
 }
 #credit {
-  width: 100%;
   color: white;
   font-size: 25px;
   text-align: center;
@@ -156,3 +166,30 @@ footer p {
   padding: 5px 5px 10px 5px;
   margin-bottom: -5px;
 }
+
+/*@media screen and (max-width: 1200px) {
+  header {
+    font-size: 25px;
+  }
+  main {
+    font-size: 25px;
+  }
+  footer {
+    font-size: 25px;
+  }
+  section h2 {
+    font-size: 1px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  header {
+    font-size: 15px;
+  }
+  main {
+    font-size: 15px;
+  }
+  footer {
+    font-size: 15px;
+  }
+}*/
