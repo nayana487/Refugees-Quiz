@@ -171,8 +171,12 @@
 
 
 
+		//To Do Next 
 
-
+		// - style radio button
+		// - limit main height
+		// - Remove clutter: unused IDs
+		// - Make the page mobile responsive
 
 		// Make timer count minutes
 
@@ -184,4 +188,6 @@
 
 		// Fix GitHub pages bug
 		// Edit ReadMe file
+
+		//Your HTML/CSS should pass the HTML5 Validator and CSS Validator
   })
