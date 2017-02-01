@@ -137,15 +137,18 @@ div .correctAnswerText {
 
 footer {
   font-size: 50px;
-  color: #792583;
+  /*color: #792583;*/
+  color: #f6c68b;
+  background: black;
   margin: 0 auto;
-  padding: 15px;
-  padding-bottom: 45px;
+  padding: 10px;
   text-align: center;
+}
+footer p {
+  margin-bottom: 5px;
 }
 #credit {
   width: 100%;
-  background: black;
   color: white;
   font-size: 25px;
   text-align: center;
