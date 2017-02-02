@@ -3,15 +3,9 @@
   }
 body {
   margin: 0 auto;
-  /*background: #8ddff0;*/
   background: url("images/blue-mist-background.jpg");
   /*image source: http://www.publicdomainpictures.net/pictures/130000/velka/blue-mist-background.jpg*/
   background-size: cover;
-  /*display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;*/
 }
 .hide {
   visibility: hidden;
@@ -56,27 +50,24 @@ header {
   background: url("images/636080479657733506210837697_refugee.jpg");
   /*image source: https://www.theodysseyonline.com/humanist-approach-refugee-crisis*/
   background-size: cover;
-  Background-position: center bottom;
+  background-position: center bottom;
 }
 header > section {
   background-color: rgba(255, 255, 255, .5);
   padding: 1px 15px 95px 15px;
 }
 header p {
-  /*font-size: 40px;*/
   font-family: 'EB Garamond', serif;
   text-align: justify;
   color: black;
 }
 header h2 {
-  /*font-size: 50px;*/
   margin-top: 20px;
   font-family: 'Bree Serif', serif;
   padding-bottom: 7px;
   color: #f6c68b;
 }
 header li {
-  /*color: #792583;*/
   color: black;
 }
 #begin {
@@ -90,7 +81,6 @@ header li {
   padding: 20px 25px;
   border-radius: 15px;
   color: #f48529;
-  /*color: #f6c68b;*/
 }
 
 main {
@@ -98,7 +88,6 @@ main {
   padding-top: 130px;
 }
 div {
-  /*height: 100vh;*/
   padding: 25px;
   background: #205ee3;
   border-radius: 20px;
@@ -108,7 +97,6 @@ div {
 div h2 {
   padding-bottom: 15px;
   font-family: 'Bree Serif', serif;
-  /*color: #205ee3;*/
 }
 div p {
   padding-left: 15px;
@@ -166,30 +154,3 @@ footer p {
   padding: 5px 5px 10px 5px;
   margin-bottom: -5px;
 }
-
-/*@media screen and (max-width: 1200px) {
-  header {
-    font-size: 25px;
-  }
-  main {
-    font-size: 25px;
-  }
-  footer {
-    font-size: 25px;
-  }
-  section h2 {
-    font-size: 1px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  header {
-    font-size: 15px;
-  }
-  main {
-    font-size: 15px;
-  }
-  footer {
-    font-size: 15px;
-  }
-}*/
